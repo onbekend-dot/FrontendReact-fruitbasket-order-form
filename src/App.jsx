@@ -1,13 +1,25 @@
+import './App.css';
+import { useState } from 'react';
 
-import './App.css'
+function Counter() {
+    const [count, setCount] = useState(0);
 
-function App() {
+    return (
+        <>
+            <h1>Fruitmand bezorgservice</h1>
 
-  return (
-    <>
-        <h1>Fruitmand bezorgservice</h1>
-    </>
-  )
+            <button onClick={() => setCount(count + 1)}>
+                Voeg fruit toe
+            </button>
+
+            <p>Aantal stuks fruit: {count}</p>
+            <p>Aantal: {count}</p>
+        </>
+    );
 }
 
-export default App
+function App() {
+    return <Counter />;
+}
+
+export default App;
