@@ -1,25 +1,36 @@
-import './App.css';
-import { useState } from 'react';
+import '../App.css';
+import FruitCard from './componenten/FruitCard';
+function App() {
 
-function Counter() {
-    const [count, setCount] = useState(0);
 
     return (
         <>
+
             <h1>Fruitmand bezorgservice</h1>
+<section className="fruit-container">
 
-            <button onClick={() => setCount(count + 1)}>
-                Voeg fruit toe
-            </button>
+            <FruitCard naam="Bananen"/>
+            <FruitCard naam="appels"/>
+            <FruitCard naam="aardbeien"/>
+            <FruitCard naam="kiwi"/>
+            <FruitCard naam="peren"/>
 
-            <p>Aantal stuks fruit: {count}</p>
-            <p>Aantal: {count}</p>
+</section>
+
+
         </>
     );
+
 }
 
-function App() {
-    return <Counter />;
-}
+
+
+
+
+
+
+
+
+
 
 export default App;
