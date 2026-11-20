@@ -19,7 +19,7 @@ function Counter() {
     return (
         <>
             <button className="counter-button"
-                    style={{color: 'red', backgroundColor: count > 1 ? 'red' : 'green', height: '30px', width: '30px'}}
+                    style={{color: 'red', backgroundColor: count > 2 ? 'red' : 'green', height: '30px', width: '30px'}}
                     onClick=
                         {handleClick}>+</button>
             <p>Aantal: {count}</p>
