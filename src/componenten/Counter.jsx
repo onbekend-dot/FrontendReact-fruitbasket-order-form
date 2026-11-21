@@ -19,16 +19,16 @@ function Counter() {
     return (
         <>
             <button className="counter-button"
-                    style={{color: 'red', backgroundColor: count > 2 ? 'red' : 'green', height: '30px', width: '30px'}}
+                    style={{color: 'red', backgroundColor: count > 2 ? 'yellow' : 'red', height: '35px', width: '35px'}}
                     onClick=
                         {handleClick}>+</button>
             <p>Aantal: {count}</p>
 
-            {showInfo && <h2>Fruit toegevoegd!</h2>}
+            {showInfo && <h2>Fruit is toegevoegd!</h2>}
 
 
                         <button className="counter-button"
-                style={{color: 'red', backgroundColor: 'white', height: '30px',width: '30px'}}
+                style={{color: 'red', backgroundColor: 'white', height: '35px',width: '35px'}}
                 onClick={() => {
                     if (count > 0) {
                         setCount(count - 1);
